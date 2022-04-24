@@ -1,0 +1,872 @@
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  float: center;
+  padding: 20px;
+  position: relative;
+  bottom: 15px;
+  width: 1330px;
+
+  right: 10px;
+}
+
+.topnav a {
+  padding-top: 10%;
+  display: inline;
+  background-color: transparent;
+  text-align: center;
+  padding: 17px 16px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+  color: tomato;
+}
+
+.topnav a.active {
+  background-color: transparent;
+
+  color: tomato;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.heading {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 50px;
+  bottom: 625px;
+  color: black;
+  padding: 5px;
+  border: 2px solid black;
+}
+.heading1 {
+  font-size: 35px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 450px;
+  top: 150px;
+  color: white;
+}
+.heading2 {
+  font-size: 35px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 450px;
+  top: 180px;
+  color: white;
+}
+.heading3 {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 650px;
+  top: 280px;
+  color: white;
+}
+.heading4 {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 650px;
+  top: 320px;
+  color: white;
+}
+.heading5 {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 650px;
+  top: 350px;
+  color: white;
+}
+.heading6 {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 650px;
+  top: 380px;
+  color: white;
+}
+.heading7 {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 650px;
+  top: 410px;
+  color: white;
+}
+.heading8 {
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 50px;
+  top: 830px;
+  color: tomato;
+  padding: 5px;
+  border-left: 5px solid tomato;
+  border-bottom: 5px solid tomato;
+}
+.heading9 {
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 50px;
+  top: 880px;
+  color: tomato;
+  padding: 5px;
+}
+.text {
+  font-size: 50px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 120px;
+  top: 150px;
+  color: rgb(12, 31, 44);
+  opacity: 0.8;
+}
+.text1 {
+  font-size: 50px;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  left: 150px;
+  top: 200px;
+  color: rgb(12, 31, 44);
+  opacity: 0.8;
+}
+/* slider*/
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: absolute;
+  top: 280px;
+  left: 120px;
+  width: 500px;
+  border-radius: 20px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  border-radius: 20px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* images */
+.image1 {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  width: 900px;
+  height: 600px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+}
+.image2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  height: 600px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: -1;
+}
+.image3 {
+  position: absolute;
+  top: 800px;
+  left: 10px;
+  width: 930px;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: -1;
+}
+.image4 {
+  position: absolute;
+  top: 800px;
+  left: 940px;
+  width: 400px;
+  height: 300px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+}
+/* ratings */
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 20px;
+}
+h1 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  float: left;
+  position: absolute;
+  top: 450px;
+  left: 640px;
+}
+
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+/* button */
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.fa-cart-plus {
+  background: #0652dd;
+}
+
+.addtocart {
+  display: block;
+  padding: 0.5em 0em 0.5em 1em;
+  border-radius: 100px;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  top: 370px;
+  left: 1070px;
+  background: hsl(219, 77%, 46%);
+  cursor: pointer;
+  height: 2em;
+  width: 9em;
+  overflow: hidden;
+  transition: transform 0.1s;
+  z-index: 1;
+}
+.addtocart:hover {
+  transform: scale(1.1);
+}
+.pretext {
+  color: #fff;
+  background: #0652dd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+i {
+  margin-right: 10px;
+}
+.done {
+  background: tomato;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+
+  transform: translate(-110%) skew(-40deg);
+}
+.posttext {
+  background: tomato;
+}
+.fa-check {
+  background: tomato;
+}
+.button1 {
+  background-color: #0652dd;
+  text-decoration: none;
+  border: 2px solid #0652dd;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 4px;
+  width: 170px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 450px;
+  left: 1080px;
+  overflow: hidden;
+  transition: transform 0.1s;
+  font-family: "Ubuntu", sans-serif;
+}
+.button1:hover {
+  transform: scale(1.1);
+  background-color: tomato;
+}
+
+#myFile {
+  position: absolute;
+  top: 550px;
+  background-color: #0652dd;
+  left: 650px;
+  width: 400px;
+
+  text-align: center;
+}
+.submit {
+  position: absolute;
+  top: 550px;
+
+  left: 1000px;
+}
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid tomato;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  left: 650px;
+  top: 630px;
+  text-align: center;
+  width: 500px;
+}
+.button:hover {
+  background: #06d85f;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
+}
+.button2 {
+  position: absolute;
+  top: 830px;
+  left: 1050px;
+  font-size: 20px;
+  text-decoration: none;
+  border: 2px solid hsl(219, 77%, 46%);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: hsl(219, 77%, 46%);
+  transition: transform 0.1s;
+  font-family: "Ubuntu", sans-serif;
+}
+.button2:hover {
+  transform: scale(1.1);
+  background-color: rgb(249, 106, 38);
+  border: solid 2px rgb(249, 106, 38);
+}
+.button3 {
+  position: absolute;
+  top: 910px;
+  left: 1050px;
+  font-size: 20px;
+  text-align: center;
+  width: 195px;
+  text-decoration: none;
+  border: 2px solid hsl(219, 77%, 46%);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: hsl(219, 77%, 46%);
+  transition: transform 0.1s;
+  font-family: "Ubuntu", sans-serif;
+}
+.button3:hover {
+  transform: scale(1.1);
+  background-color: rgb(249, 106, 38);
+  border: solid 2px rgb(249, 106, 38);
+}
+.button4 {
+  position: absolute;
+  top: 990px;
+  left: 1050px;
+  font-size: 20px;
+  text-align: center;
+  width: 195px;
+  text-decoration: none;
+  border: 2px solid hsl(219, 77%, 46%);
+  border-radius: 10px;
+  padding: 5px;
+  background-color: hsl(219, 77%, 46%);
+  transition: transform 0.1s;
+  font-family: "Ubuntu", sans-serif;
+}
+.button4:hover {
+  transform: scale(1.1);
+  background-color: rgb(249, 106, 38);
+  border: solid 2px rgb(249, 106, 38);
+}
+/* map */
+.mapouter {
+  position: absolute;
+  top: 1170px;
+  left: 50px;
+  text-align: center;
+  height: 535px;
+  width: 628px;
+  border-radius: 10px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 535px;
+  width: 628px;
+}
+/* table */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+  height: 535px;
+  left: 750px;
+  position: absolute;
+  top: 1170px;
+}
+
+td,
+th {
+  border: 1px solid #0c1f2c;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f96a26;
+}
+/* footer */
+#wavify_footer {
+  margin: 0;
+  height: 250px;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  top: 1500px;
+}
+
+#footer-desktop {
+  background-color: #23272a;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-wrap {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 30px 0 15px;
+}
+
+#section_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#section_footer_logo {
+  margin: 0 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+}
+
+#content_footer_logo {
+  width: 150px;
+  height: 35px;
+  pointer-events: none;
+  user-select: none;
+}
+
+#content_footer_logotext {
+  margin: 5px 0 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #eeeeee;
+}
+
+#section_footer_links {
+  display: flex;
+  flex-basis: 70%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.section-content-links {
+  margin: 0 15px 0 15px;
+}
+
+.content-footer-title {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #7289da;
+}
+
+.content-footer-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.content-footer-link {
+  margin: 10px 0 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #eeeeee;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content-footer-link:hover {
+  color: #b0aeae;
+}
+
+.shaking-animation:hover {
+  color: #f04747;
+  animation: delete-account-warning 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes delete-account-warning {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+#footer-mobile {
+  display: none;
+  background-color: #23272a;
+}
+
+#section_footer-m {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+}
+
+#section_footer_links-m {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.section-content-links-m {
+  width: 50%;
+}
+
+.section-footer-linksplit {
+  display: flex;
+  width: 100%;
+}
+
+.content-footer-link-m {
+  margin: 10px 0 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #eeeeee;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content-footer-link-m:hover {
+  color: #b0aeae;
+}
+
+@media only screen and (maxa-width: 767px) {
+  #footer-mobile {
+    display: block;
+  }
+
+  #footer-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  #footer-mobile {
+    display: block;
+  }
+
+  #footer-desktop {
+    display: none;
+  }
+}
