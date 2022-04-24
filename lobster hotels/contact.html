@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style7.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">HOME</a>
+      
+      <a href="#contact" class="active">CONTACT</a>
+      <a href="best deals.html">BEST DEALS</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <h1 class="heading">lobster</h1>
+
+    <h2 class="subhead2">CONTACT US</h2>
+    <h4 class="taghead">WE ARE EASY TO FIND</h4>
+    
+    <img class="responsive2"src="https://o.remove.bg/downloads/848c8d6d-d708-4ff9-ba52-5ee3400b3180/man-calling-with-smartphone-vector-18286172-removebg-preview.png" alt="">
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="usa">India</option>
+          <option value="usa">China</option>
+          <option value="usa">Africa</option>
+          <option value="usa">Russia</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px;"
+        ></textarea>
+
+        <a class="btn" href="index.html"><button>submit</button></a>
+      </form>
+    </div>
+    
+    <img class="footer" src="https://i.pinimg.com/originals/b8/8e/59/b88e5919775afd0de88efa8ebcaf1250.png" alt="" />
+    <p class="location">LOCATIONS</p>
+    <p class="loc1">
+     376 van bank st.
+     <br />
+     New York-11231
+    </p>
+    <p class="loc2">
+     25 union square west
+     <br />
+     L.a-10003
+    </p>
+    <p class="hours">HOURS</p>
+    <p class="mon-thu">
+     Monday-Thursday
+     <br />
+     7:30am-11:00pm
+    </p>
+    <p class="fri-sat">
+     Friday-Sarurday
+     <br />
+     7:30am-11:00pm
+    </p>
+    <p class="private">
+     Available For Private
+     <br />
+     Evening On Saturday
+    </p>
+    <img class="copy" src="https://www.solidbackgrounds.com/images/1400x1050/1400x1050-dim-gray-solid-color-background.jpg"
+     alt="" />
+    <p class="copyright">Copyright 2020 &#169 Made With &#10084 By Mohd Moiz </p>
+    <p class="terms"> Permission For Copyright .
+     Terms and Conditions</p>
+  </body>
+</html>

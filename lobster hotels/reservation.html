@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style4.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@600&family=Lora:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap"
+      rel="stylesheet"
+    />
+    <title>RESERVATION</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html">HOME</a>
+      <a href="#news">ABOUT</a>
+      <a href="menu.html" target="_blank">MENU</a>
+      <a href="#about" class="active">RESERVATIONS</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <img
+      class="responsive"
+      src="https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      width="600"
+      height="200"
+      alt=""
+    />
+    <h1 class="heading">lobster</h1>
+
+    <h2 class="subhead">Welcome</h2>
+    <h2 class="subhead2">VISITORS</h2>
+    <img
+      class="img1"
+      src="https://images.pexels.com/photos/2467285/pexels-photo-2467285.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+      alt=""
+    />
+    <img
+      class="img2"
+      src="https://images.pexels.com/photos/279805/pexels-photo-279805.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      alt=""
+    />
+
+    <h1 class="redefine">
+      Redefine The Luxury
+      <br />
+      Hospitality Experience
+    </h1>
+    <p class="p1">
+      We offer good services with in-room wifi and food at your
+      <br />
+      door step and more. we take care of your clothes before
+      <br />
+      you leave for a meeting, we have world class furnished
+      <br />
+      rooms with beautiful interior.
+    </p>
+    <div class="rectangle"></div>
+    <h1 class="room">
+      CHOOSE ROOM WHICH IS
+      <br />
+      COMFORTABLE TO YOU
+    </h1>
+    <input class="checkin" type="date" id="myDate" value="2014-02-09" />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myDate").value;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+    <p class="checkinp">Check in</p>
+
+    <input class="checkout" type="date" id="myDate" value="2014-02-09" />
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myDate").value;
+        document.getElementById("demo").innerHTML = x;
+      }
+    </script>
+    <p class="checkoutp">Check out</p>
+
+    <form action="/action_page.php">
+      <label class="atime" for="appt">Select a time:</label>
+      <input class="time" type="time" id="appt" name="appt" />
+      <input class="sub" type="submit" />
+
+      <div class="whiterectangle"></div>
+      <div class="card">
+        <img
+          src="https://images.pexels.com/photos/2029731/pexels-photo-2029731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Avatar"
+          style="width: 100%;"
+        />
+        <div class="container">
+          <h4><b>STANDERD</b></h4>
+          <a href="reserform.html">
+            <p>BOOK THIS ROOM</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="card1">
+        <img
+          src="https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Avatar"
+          style="width: 100%;"
+        />
+        <div class="container1">
+          <h4><b>DELUXE</b></h4>
+          <a href="reserform.html">
+            <p>BOOK THIS ROOM</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="card2">
+        <img
+          src="https://images.pexels.com/photos/1148927/pexels-photo-1148927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Avatar"
+          style="width: 100%;"
+        />
+        <div class="container2">
+          <h4><b>SUPER DELUX</b></h4>
+          <a href="reserform.html">
+            <p>BOOK THIS ROOM</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="card3">
+        <img
+          src="https://images.pexels.com/photos/210265/pexels-photo-210265.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Avatar"
+          style="width: 100%;"
+        />
+        <div class="container3">
+          <h4><b>PREMIER DELUX</b></h4>
+          <a href="reserform.html">
+            <p>BOOK THIS ROOM</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="card4">
+        <img
+          src="https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Avatar"
+          style="width: 100%;"
+        />
+        <div class="container4">
+          <h4><b>EXECUTIVE SIUTE</b></h4>
+          <a href="reserform.html">
+            <p>BOOK THIS ROOM</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="card5">
+        <img
+          src="https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="Avatar"
+          style="width: 100%;"
+        />
+        <div class="container5">
+          <h4><b>JUNIOR SUITE</b></h4>
+          <a href="reserform.html">
+            <p>BOOK THIS ROOM</p>
+          </a>
+        </div>
+      </div>
+    </form>
+
+    <div class="rectangle23"></div>
+    <h1 class="offers">
+      BEST OFFERS ON ROOMS
+    </h1>
+    <div class="whiterectangle23"></div>
+
+    <div class="card6">
+      <img
+        src="
+https://images.pexels.com/photos/2030119/pexels-photo-2030119.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="Avatar" style="width: 100%;" />
+      <div class="container">
+        <h4><b>STANDERD</b></h4>
+        <a href="reserform.html">
+          <p>BOOK THIS ROOM</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="card7">
+      <img
+        src="https://images.pexels.com/photos/3144580/pexels-photo-3144580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="Avatar" style="width: 100%;" />
+      <div class="container1">
+        <h4><b>JUNIOR SUITE</b></h4>
+        <a href="reserform.html">
+          <p>BOOK THIS ROOM</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="card8">
+      <img
+        src="
+https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        alt="Avatar" style="width: 100%;" />
+      <div class="container2">
+        <h4><b>PREMIER DELUX</b></h4>
+    <a href="reserform.html">
+      <p>BOOK THIS ROOM</p>
+    </a>
+      </div>
+    </div>
+    
+    <div class="card9">
+      <img
+        src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="Avatar" style="width: 100%;" />
+      <div class="container3">
+        <h4><b>EXECUTIVE SIUTE</b></h4>
+        <a href="reserform.html">
+          <p>BOOK THIS ROOM</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="card10">
+      <img
+        src="https://images.pexels.com/photos/3659681/pexels-photo-3659681.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="Avatar" style="width: 100%;" />
+      <div class="container4">
+        <h4><b>SUPER DELUX</b></h4>
+        <a href="reserform.html">
+          <p>BOOK THIS ROOM</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="card11">
+      <img
+        src="https://images.pexels.com/photos/3770102/pexels-photo-3770102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="Avatar" style="width: 100%;" />
+      <div class="container5">
+        <h4><b>DELUX</b></h4>
+       <a href="reserform.html"><p>BOOK THIS ROOM</p></a> 
+      </div>
+    </div>
+    </form>
+    <img  class="wifi"src="https://image.flaticon.com/icons/png/512/72/72234.png" alt="">
+    <p class="wifi1">We offer high speed 
+      <br>
+      wifi to make your work 
+      <br>
+      easy and to stay connected
+      <br>
+      with world.
+
+            <img class="iron" src="https://library.kissclipart.com/20180923/spw/kissclipart-iron-laundry-icon-clipart-laundry-symbol-clothes-i-3419602750b2a00f.png" alt="">
+            <p class="iron1">We offer you free
+              <br>
+              cloth ironing to make you
+              <br>
+             ready for your events 
+              <br>
+              and meetings.
+           </p>
+
+           <img class="dish" src="https://media.istockphoto.com/vectors/dish-icon-vector-icon-simple-element-illustration-dish-symbol-design-vector-id1005990944?k=6&m=1005990944&s=170667a&w=0&h=E-tLSI8w7zqwYv7JOgrZZvAXjbydjuNIhtrFgvvTzWI=" alt="">
+          <p class="dish1">We offer delisious 
+            <br>
+            dishes at your door step
+            <br>
+            with just a phone call
+            <br>
+            to us.
+          </p> 
+
+          <img class="key"
+            src="https://cdn1.iconfinder.com/data/icons/personal-daily-items/48/Personal_item_daily_everyday-07-512.png"
+            alt="">
+          <p class="key1">We offer high speed
+            <br>
+            wifi to make your work
+            <br>
+            easy and to stay connected
+            <br>
+            with world
+          </p>
+  </body>
+</html>

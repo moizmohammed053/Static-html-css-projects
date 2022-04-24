@@ -1,0 +1,61 @@
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.heading {
+  font-size: 1vw;
+  text-align: center;
+  font-weight: bold;
+  font-style: unset;
+  font-variant: normal;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 610px;
+  color: white;
+  left: 1200px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+.taghead {
+  font-size: 70px;
+  text-align: center;
+  font-weight: bold;
+  font-style: unset;
+  font-variant: normal;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 10px;
+  text-decoration: black;
+  color: coral;
+  left: 225px;
+}
+.mail {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-style: unset;
+  font-variant: normal;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 500px;
+  text-decoration: black;
+  color: coral;
+  left: 225px;
+}
+.home {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-style: unset;
+  font-variant: normal;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 500px;
+  text-decoration: black;
+  color: coral;
+  left: 825px;
+}
